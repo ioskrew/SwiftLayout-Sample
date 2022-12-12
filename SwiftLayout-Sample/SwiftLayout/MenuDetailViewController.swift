@@ -40,8 +40,7 @@ class MenuDetailViewController: UIViewController, Layoutable {
                 titleLabel.config {
                     $0.text = menu.name
                 }.anchors {
-                    Anchors.top
-                    Anchors.leading
+                    Anchors.top.leading
                 }
 
                 descriptionLabel.config {

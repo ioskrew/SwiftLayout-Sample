@@ -25,8 +25,7 @@ final class MenuDetailBottomViewWithAnimation: MenuDetailBottomBaseView, Layouta
     var layout: some Layout {
         self.sublayout {
             toppingTitleLabel.anchors {
-                Anchors.top
-                Anchors.leading
+                Anchors.top.leading
             }
 
             showToppingButton.config {

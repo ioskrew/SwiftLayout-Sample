@@ -43,8 +43,7 @@ class ToppingItemView: UIView, Layoutable {
             titleLabel.config {
                 $0.text = topping.displayName
             }.anchors {
-                Anchors.leading.equalToSuper(constant: 0)
-                Anchors.centerY
+                Anchors.leading.centerY
             }
 
             countLabel.anchors {
@@ -53,8 +52,7 @@ class ToppingItemView: UIView, Layoutable {
 
             stepper.anchors {
                 Anchors.leading.equalTo(countLabel, attribute: .trailing, constant: 20)
-                Anchors.centerY
-                Anchors.trailing.equalToSuper(constant: 0)
+                Anchors.centerY.trailing
             }
         }
     }

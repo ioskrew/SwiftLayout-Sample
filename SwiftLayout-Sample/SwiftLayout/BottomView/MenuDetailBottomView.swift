@@ -25,8 +25,7 @@ final class MenuDetailBottomView: MenuDetailBottomBaseView, Layoutable {
     var layout: some Layout {
         self.sublayout {
             toppingTitleLabel.anchors {
-                Anchors.top
-                Anchors.leading
+                Anchors.top.leading
             }
 
             showToppingButton.config {
